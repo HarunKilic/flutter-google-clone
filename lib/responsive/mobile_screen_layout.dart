@@ -5,7 +5,6 @@ import 'package:google_clone_tutorial/widgets/mobile/mobile_footer.dart';
 import 'package:google_clone_tutorial/widgets/search.dart';
 import 'package:google_clone_tutorial/widgets/translation_buttons.dart';
 import 'package:google_clone_tutorial/widgets/web/search_buttons.dart';
-import 'package:google_clone_tutorial/widgets/web/web_footer.dart';
 
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({super.key});
@@ -85,14 +84,6 @@ class MobileScreenLayout extends StatelessWidget {
                   Column(
                     children: [
                       Search(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      SearchButtons(),
-                      SizedBox(
-                        height: 20,
-                      ),
-                      TranslationButtons(),
                     ],
                   ),
                 ],

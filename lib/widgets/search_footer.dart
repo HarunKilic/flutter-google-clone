@@ -11,7 +11,8 @@ class SearchFooter extends StatelessWidget {
       children: [
         Container(
           color: footerColor,
-          padding: const EdgeInsets.symmetric(horizontal: 150, vertical: 15),
+          padding: EdgeInsets.symmetric(
+              horizontal: size.width <= 768 ? 10 : 150, vertical: 15),
           child: Row(
             children: [
               Text(
@@ -41,14 +42,14 @@ class SearchFooter extends StatelessWidget {
           ),
         ),
         const Divider(
-          height: 9,
+          height: 0,
           thickness: 0,
           color: Colors.black26,
         ),
         Container(
           color: footerColor,
-          padding: const EdgeInsets.symmetric(
-            horizontal: 50,
+          padding: EdgeInsets.symmetric(
+            horizontal: size.width <= 768 ? 20 : 50,
           ),
           child: Row(
             children: [
